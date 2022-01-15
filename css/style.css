@@ -1,0 +1,22 @@
+/* main */
+header h2{
+    padding: 15px;
+}
+
+.container{
+    display: flex;
+    padding: 40px;
+}
+h1{
+    font-size: 40px;
+}
+.main-button{
+    padding: 15px;
+    background-color: rgb(224, 224, 206);
+    border: none;
+    border-radius: 5px;
+}
+.main-button span{
+    margin-left: 5px;
+}
+/* popular section */
