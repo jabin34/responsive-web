@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(189 189 189 / 22%);
+    background-color: #f5f5ed30;;
+    padding: 0px;
+    margin: 0px;
 }
 /* main */
 header h2{
@@ -7,6 +9,7 @@ header h2{
 }
 
 .container{
+   
     display: flex;
     padding: 50px;
     align-items: center;
@@ -22,7 +25,7 @@ h1{
     background-color:rgb(149 189 133);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 34px;
     font-size: 20px;
     transition: background-color 2s;
 }
@@ -52,6 +55,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .cards{
     display: flex;
@@ -72,6 +76,11 @@ h1{
     display: flex;
     flex-direction: column;  
     margin: 20px;
+    box-shadow: 4px 1px 8px 6px #f5f5ed54;
+    transition: box-shadow 2s;
+}
+.card:hover{
+    box-shadow:1px 1px 1px 1px rgb(202, 200, 200);
 }
 
 .card-header h2{
@@ -93,7 +102,19 @@ font-weight: 700;
 color: grey;
 font-size: 18px;
 }
-
+.see-more-btn{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    color:rgb(149 189 133);
+    font-size: 20px;
+}
+/* extra section */
+.we-do{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* footer */
 footer{
     height: 210px;
@@ -121,4 +142,42 @@ footer{
 }
 .social-icon>a i:hover{
     background-color: tomato;
+}
+/* mobile view */
+@media screen and (max-width:680px) {
+    header {
+        justify-content: center;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 0px;
+        margin: 0px;
+        justify-items: center;
+    }
+    .main-text{
+        padding: 16px;
+    }
+    .main-img{
+        padding: 0px;
+        width: 100%;
+        transition: transform 2s;
+    }
+    .main-img:hover{
+        transform: rotate(30deg);
+    }
+    .main-img img{
+        width: 100%;
+    }
+    .feature-product{
+        display: flex;
+        width: 100%;
+    }.see-more-btn{
+        position:none;
+    }
+    footer{
+        
+        background-color: #1e3415ed;
+        color: white;
+    }
 }
