@@ -1,22 +1,124 @@
+body{
+    background-color: rgb(189 189 189 / 22%);
+}
 /* main */
 header h2{
-    padding: 15px;
+    padding-left: 30px;
 }
 
 .container{
     display: flex;
-    padding: 40px;
+    padding: 50px;
+    align-items: center;
 }
 h1{
     font-size: 40px;
 }
+.main-text p{
+    font-size: 22px;
+}
 .main-button{
     padding: 15px;
-    background-color: rgb(224, 224, 206);
+    background-color:rgb(149 189 133);
+    color: white;
     border: none;
     border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 2s;
+}
+.main-button:hover{
+   background-color: gray;
 }
 .main-button span{
     margin-left: 5px;
 }
+.main-img{
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid  rgb(149 189 133);
+    background-color:rgb(149 189 133) ;
+    box-shadow:1px 1px 14px 5px #d1d1c9e0;
+    transition: transform 2s;
+    
+}
+.main-img:hover{
+    transform: rotate(30deg);
+}
+
 /* popular section */
+.popular-section{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-row-gap: 22px; */
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 35px;
+}
+.card{
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+    border:1px solid white;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;  
+    margin: 20px;
+}
+
+.card-header h2{
+    color: grey;
+    font-size: 30px;
+}
+.rating{
+    display: flex;
+    font-size: 15px;
+}
+.star-filled{
+    color: yellowgreen;
+}
+.empty-star{
+    color: grey;
+}
+.card-description p{
+font-weight: 700;
+color: grey;
+font-size: 18px;
+}
+
+/* footer */
+footer{
+    height: 210px;
+    background-color: #1e3415ed;
+    color: white;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.social-icon>a i{
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #1e3415ed;
+    border-radius: 50%;
+    background-color: #6c726a8c;
+    transition: background-color 2s;
+}
+.social-icon>a i:hover{
+    background-color: tomato;
+}
